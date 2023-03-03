@@ -92,7 +92,29 @@
     </ul>
     
     <h2>Open Positions</h2>
-    <p class="bodytext">Todo Display open positions here</p>
+    <div>
+      {%for job in jobs%}
+      <div>
+      <h4 style="color:rgb(120,160,180)">
+        {{job['title']}}
+      </h4>
+        
+      <div>
+      <b>Location:</b>{{job['location']}}
+      </div>
+
+      <div>
+      <b>Salary:</b>{{job['salary']}}
+      </div>
+
+      <div>
+      <b>Requirements:</b>{{job['requirements']}}
+      </div
+        
+      </div>
+      
+      {%endfor%}
+    </div>
     <div style="text-align:center;">
             <button>Contact Us</button>
             <p>Copyright 2023</p>
