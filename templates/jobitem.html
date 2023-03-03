@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-9">       
+  <h4 style="color:rgb(120,140,140)">{{job['title']}} 
+  </h4>
+  
+    
+  <div>
+    <b>Location:</b>{{job['location']}}
+  </div>
+  
+  <div >
+    <b>Requirements:</b>{{job['requirements']}} 
+  </div>
+    {%if 'salary' in job%}
+  
+    <div >
+        <b>Salary:</b>{{job['salary']}}
+    </div>
+          
+  
+    {%endif%}
+    <br>
+  </div>
+  <div class="col-3 ">
+    <button class="button button2"style="margin-top:25px ">
+      Apply
+    </button>
+  </div>
+ 
+  <hr>
+</div>
+  
